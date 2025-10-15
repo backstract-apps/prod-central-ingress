@@ -1,0 +1,943 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: nginx
+spec:
+  controller: k8s.io/ingress-nginx
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-srv-apps-prod
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cc1fbde45ead-in-south-01.mayson.dev
+      http:
+        paths:
+          - path: /modest-jepsen-f74209c63f9211f095c5aec16983dee776/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-672169f28bf14be78de0a8b349bb3944-srv
+                port:
+                  number: 80
+          - path: /practical-knuth-0eb2e3aa460011f080f2aec16983dee7100/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-73e8fe658da94aa3aa372a8cb5341958-srv
+                port:
+                  number: 80
+          - path: /ap-southeast-2-backstractelb-2a4534-coll-0ce203fa20d2497c8c80770e28e27947/
+            pathType: Prefix
+            backend:
+              service:
+                name: nice-aarav-ee29c7cf05-srv
+                port:
+                  number: 80
+          - path: /adoring-tara-df624b4a59a511f08548125b56bd792350/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-2fed9e9a2353488c81c2c9259ea64bf2-srv
+                port:
+                  number: 80
+          - path: /stoic-rajat-6e51c34e589d11f0acec125b56bd792310/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-b4f0a5355bf548e1855b3c2258964843-srv
+                port:
+                  number: 80
+          - path: /sad-joliot-fe3a4e6a58a511f082b9125b56bd792389/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-94fe21c2f72d4874ac70c9acfe7f3a0d-srv
+                port:
+                  number: 80
+          - path: /festive-suresh-21726bfc5b3e11f0a279125b56bd792325/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-8bad4097c3364a3fae0fc9786e332e4b-srv
+                port:
+                  number: 80
+          - path: /hardcore-visvesvaraya-007bfcd25d7911f0949e3adbebfba41066/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-455ba056408c4043ba38e7371b12f609-srv
+                port:
+                  number: 80
+          - path: /optimistic-borg-737841b25c6d11f0a57f125b56bd792319/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-c91c749c0405484f99f2fade6f074431-srv
+                port:
+                  number: 80
+          - path: /confident-jones-d00b9c5e5cc111f09405125b56bd792377/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-53765494976a4f5b86ae7ad25668d659-srv
+                port:
+                  number: 80
+          - path: /interesting-stallman-246de1a85e1b11f0bdb63adbebfba41080/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-1ea27a104b204c968ae404fd13868280-srv
+                port:
+                  number: 80
+          - path: /peaceful-diya-8da24468607611f0a70c3adbebfba41022/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-34cea5cb451d4b36a0d81448149da898-srv
+                port:
+                  number: 80
+          - path: /eu-west-1-backstractelb-58d55d-coll-5980afddc676448a93c77810eac37171/
+            pathType: Prefix
+            backend:
+              service:
+                name: eager-aarav-ac69186d9a-srv
+                port:
+                  number: 80
+          - path: /us-east-1-backstractelb-e738d0-coll-43bfc6fe97774f0c9c409eb8a04f701a/
+            pathType: Prefix
+            backend:
+              service:
+                name: blissful-aarav-59e1e6440b-srv
+                port:
+                  number: 80
+          - path: /heuristic-allen-bc1c26fc5b0211f08b7c125b56bd792364/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a5946a091d1548a5a7a0eebbaea9f9b1-srv
+                port:
+                  number: 80
+          - path: /suspicious-lakshmi-1bcc9aec5ca111f0972d125b56bd792391/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-736da61e135940bca43bd59ca133facf-srv
+                port:
+                  number: 80
+          - path: /stoic-rekha-ef118cc65bc711f08f75125b56bd792381/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-117ac4e1d4af4501a5e220ae387227bd-srv
+                port:
+                  number: 80
+          - path: /interesting-nobel-716ba8ec58a711f08a43125b56bd792329/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-90ef24e3b66742d7b913fa0f442835a8-srv
+                port:
+                  number: 80
+          - path: /awesome-clarke-7aa4b982583c11f0b25c06b26b66b2c291/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f2af154797c94f32abc57124dc4b70fa-srv
+                port:
+                  number: 80
+          - path: /exciting-leela-21fba7d2624b11f098193adbebfba41061/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-7c7f0fca125c403cadb31ff42ce3f019-srv
+                port:
+                  number: 80
+          - path: /flamboyant-mohan-eadc3aa6589e11f0adec125b56bd792357/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a3c9abb261a34d328f00dd86153a97d1-srv
+                port:
+                  number: 80
+          - path: /romantic-parvati-3ccaa0f058c211f0abb6125b56bd792324/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-63cccee346834badabb5c7f028ff4b33-srv
+                port:
+                  number: 80
+          - path: /crazy-mirzakhani-6b0f966e5d4f11f08bc4125b56bd792383/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-cfc2f7d23e5d4d9b9df564d6517bbbf6-srv
+                port:
+                  number: 80
+          - path: /cool-saha-62de01085e2411f09de83adbebfba41029/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-8ab4002b38a543e7ac20d89f278b9288-srv
+                port:
+                  number: 80
+          - path: /charming-suman-320311e65be411f0b607125b56bd792313/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f7b34085c9f4434eb5806d34facc5978-srv
+                port:
+                  number: 80
+          - path: /eager-nisha-2e0b7bf4623e11f0b7073adbebfba41093/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f50a5e1575014ca89bea8bc83a548531-srv
+                port:
+                  number: 80
+          - path: /beautiful-aarav-a89d0804620e11f08b9d3adbebfba41011/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-6df35cf77b034366ab83f90549c01328-srv
+                port:
+                  number: 80
+          - path: /sweet-knuth-07871c00630011f093403adbebfba4108/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-763816acc0f54481b35f2aa8ff64ebf0-srv
+                port:
+                  number: 80
+          - path: /sweet-wilbur-e7549794630111f089653adbebfba41087/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-42cb0f59efba4ebc9f9df62db46c0d69-srv
+                port:
+                  number: 80
+          - path: /eu-west-1-backstractelb-58d55d-coll-5980afddc676448a93c77810eac37171/
+            pathType: Prefix
+            backend:
+              service:
+                name: eager-aarav-ac69186d9a-srv
+                port:
+                  number: 80
+          - path: /cool-lumiere-ec31ca2e583a11f0a84e06b26b66b2c257/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-d5667c172c7d45079a4ec80623360a8e-srv
+                port:
+                  number: 80
+          - path: /flamboyant-priyanka-87fb9f705c6911f083c9125b56bd792337/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-58848c1f1e534a24a2a16d1230ed6446-srv
+                port:
+                  number: 80
+          - path: /eloquent-aditya-12a88646580611f08f88d6edd7103f1a45/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-666a57bf28ab46b48f05b522aaeab993-srv
+                port:
+                  number: 80
+          - path: /hopeful-rupali-f79e9b2258a211f0b71c125b56bd792383/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-829599e115704e87890d3256c3342ef1-srv
+                port:
+                  number: 80
+          - path: /adoring-fermi-c5dd8efe5b3611f08b7b125b56bd792371/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-cb4b9022bcb449068d7ecdc0c671e638-srv
+                port:
+                  number: 80
+          - path: /keen-kare-5db06c5c5cc111f0b6da125b56bd792331/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-97f398eb91d540509711cef97c607d76-srv
+                port:
+                  number: 80
+          - path: /amazing-parvati-0447896e5d7211f082e03adbebfba4102/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-e91799f181d74979adac2eead23b5a60-srv
+                port:
+                  number: 80
+          - path: /pedantic-wozniak-8c6ca636607311f0bfe63adbebfba41019/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-4f105e922f3e44beafbbbfb9663a33ea-srv
+                port:
+                  number: 80
+          - path: /pensive-saha-da5d681e662511f0a8ad8204c7dc2e0526/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-4d5bf8770aa94b958920c5868fc54f97-srv
+                port:
+                  number: 80
+          - path: /quizzical-vishal-c8811ab463be11f096a8aeb1eafad82716/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-50759ca12b0940539607d563e20439b2-srv
+                port:
+                  number: 80
+          - path: /adoring-brown-42e88aac630c11f0ab6e3adbebfba41012/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-ab363c6f64054d3a839823d3df9f075a-srv
+                port:
+                  number: 80
+          - path: /eu-west-1-backstractelb-58d55d-coll-5980afddc676448a93c77810eac37171/
+            pathType: Prefix
+            backend:
+              service:
+                name: eager-aarav-ac69186d9a-srv
+                port:
+                  number: 80
+          - path: /mystifying-bharati-2638fe5663ba11f09ff7aeb1eafad82710/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-bd075863fcc046b1a54bd5b6770ff2e8-srv
+                port:
+                  number: 80
+          - path: /pensive-aditya-6be7f9906a3411f0b36406f8555b529d50/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f4f1b77b33d7481ba90d8fed6294c782-srv
+                port:
+                  number: 80
+          - path: /awesome-curie-969475e663cd11f08f948204c7dc2e0562/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5980afddc676448a93c77810eac37171-srv
+                port:
+                  number: 80
+          - path: /beautiful-vaishali-94a123ec639111f0a63b3adbebfba41052/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a434b6b314a24ca684d7a45c21ff1596-srv
+                port:
+                  number: 80
+          - path: /cool-roentgen-95db697a641311f0b3488204c7dc2e0514/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-2a35bb244ee445ec8835984d55a04689-srv
+                port:
+                  number: 80
+          - path: /competent-clarke-fd66303a63cc11f09d0e8204c7dc2e0546/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-eef40991ffc542cc975261a632207c73-srv
+                port:
+                  number: 80
+          - path: /competent-rahul-05707b126a3711f0803606f8555b529d44/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-10cc5831a55c403d96e28209f3564246-srv
+                port:
+                  number: 80
+          - path: /beautiful-savita-09913100692411f0a1f88204c7dc2e0532/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-35433430dcef47f694851de23213aee2-srv
+                port:
+                  number: 80
+          - path: /reverent-hugle-833ebe246b7b11f0adea265f29b63e2f24/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-37f42074ba5f4ae7b9573dc220bbff10-srv
+                port:
+                  number: 80
+          - path: /clever-sita-a3e156ac6b9711f0b48e265f29b63e2f50/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-c9329aeebe644939abefe18b28c4c0d6-srv
+                port:
+                  number: 80
+          - path: /charming-aditya-7e0dd1e46d1311f093fc063a1e80bfcf5/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a4df2a989ac6430895d83b75667cb6b4-srv
+                port:
+                  number: 80
+          - path: /eager-mclean-40b81a48729f11f08befb2a3596eee1c36/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-cee72c0d11a340349fb9402c78d85089-srv
+                port:
+                  number: 80
+          - path: /modest-gauri-55f3f3be6b8311f0b68d265f29b63e2f74/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-16e4cd0318d348b29da3a3678ca92215-srv
+                port:
+                  number: 80
+          - path: /naughty-kirch-abeec82c6b8611f0a833265f29b63e2f13/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f23199e85f4c4add9eaaf22bb3510794-srv
+                port:
+                  number: 80
+          - path: /trusting-montalcini-42a8c9126d1611f0b197063a1e80bfcf41/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-fed44953a48a42aa8c938935d41bf96f-srv
+                port:
+                  number: 80
+          - path: /relaxed-galois-ea5aea8a6c8711f0974622bcffa0f4d722/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-22db355d387a4f2fbacaf363965c7516-srv
+                port:
+                  number: 80
+          - path: /suspicious-sagar-444b599a6b9c11f080238e67364f310019/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-9ba78540f53d4c2784e9724d19416e09-srv
+                port:
+                  number: 80
+          - path: /stupefied-kiran-d6e9970672c411f0a962e237aac79c5626/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5d9f9351d09a480da057e6b6c4be8565-srv
+                port:
+                  number: 80
+          - path: /friendly-goldstine-9b5c3aec6df411f08f13961bb727fd5785/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-cdbb1621cd3c4b059bf372446b8ba78f-srv
+                port:
+                  number: 80
+          - path: /gifted-brattain-136e7adc6c5a11f086b7e6b73f1f222d91/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f84f74ad2a2a480f885626afa8a69f07-srv
+                port:
+                  number: 80
+          - path: /exciting-vihaan-9a538e3a6d2b11f09d93063a1e80bfcf2/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-3fe50bfddbe84bd4a9f047084453f64d-srv
+                port:
+                  number: 80
+          - path: /clever-wescoff-89e8185a6ec911f09bcf961bb727fd5746/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5397b12f7d9f4231b301414f53cc051e-srv
+                port:
+                  number: 80
+          - path: /pensive-burnell-500ee3d872a311f08694b2a3596eee1c38/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-09cd017d9ac340c2a29f23001800fced-srv
+                port:
+                  number: 80
+          - path: /practical-lewin-6fed46d4735411f0be7ce237aac79c5610/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-3d7ac5b3ff374279900d74b477fd12b3-srv
+                port:
+                  number: 80
+          - path: /boring-hoover-f6d447d4736211f0bbfee237aac79c5642/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a260ac3ea6b94472b19d31845a69face-srv
+                port:
+                  number: 80
+          - path: /bold-brahmagupta-38cff8fe737211f095b8e237aac79c5667/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-1aad5b344cba4da3ad312bc7d98b9326-srv
+                port:
+                  number: 80
+          - path: /admiring-manish-b3c7578c791c11f0886f4e915e60644a3/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-ed3d81405b914f0f996408e6e062bb25-srv
+                port:
+                  number: 80
+          - path: /laughing-priyanka-ef06884c737f11f08840e237aac79c5643/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-4cd98a0d880745f3b056b08a644e70fa-srv
+                port:
+                  number: 80
+          - path: /objective-savita-82ad98e078fa11f0a9cae237aac79c5647/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-57e0479b00bc4e8bbb8e93b3aabc4261-srv
+                port:
+                  number: 80
+          - path: /elegant-ananya-a1f4b902738e11f08c15e237aac79c5657/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-6d822c63420e4dc284e198d579b45f79-srv
+                port:
+                  number: 80
+          - path: /mystifying-surbhi-c9b9836c790811f09daee237aac79c5672/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-673603bf1a0b4d7a9f4023952b0dca7f-srv
+                port:
+                  number: 80
+          - path: /dreamy-aishwarya-b656cf3c739011f0999be237aac79c5637/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-67c7a7dad4c9421e99c17da1601e22b5-srv
+                port:
+                  number: 80
+          - path: /naughty-poincare-f73b7e72743e11f08d4de237aac79c5614/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-8428360e75564a909f6f8f2aa146591f-srv
+                port:
+                  number: 80
+          - path: /affectionate-rahul-df372b3a791d11f0b21a4e915e60644a93/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-6c999f8a392a4ff8aad0e6d50c5625dc-srv
+                port:
+                  number: 80
+          - path: /compassionate-perlman-2f2bc0b87c3111f0b9825a4fb62aeae181/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-32b79da82b1e4eb4ad0acbd8b4c74c92-srv
+                port:
+                  number: 80
+          - path: /fervent-surya-a23268e27c0d11f0a88756ce393962e893/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-eea7201b70f94cfda87b9254e5c22f0b-srv
+                port:
+                  number: 80
+          - path: /frosty-galileo-d6417c567c1f11f091b156ce393962e820/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-9fca2e2e82564008819d7ba7f7e66f0a-srv
+                port:
+                  number: 80
+          - path: /tender-lewin-bf3e88fa7c3d11f0b3d45a4fb62aeae140/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-d1b210367b7b4fda9aefad341d6d1fb8-srv
+                port:
+                  number: 80
+          - path: /focused-kailash-64c8d6b07cff11f0be22c69453f185c770/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-473022892c29446d8abeb84c2840a588-srv
+                port:
+                  number: 80
+          - path: /angry-anika-482ef7947d0111f09714c69453f185c788/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-aab1240527d6491fadd42661f289f8c5-srv
+                port:
+                  number: 80
+          - path: /elegant-riya-db55d48a7d8711f08d54bea2f7a2490629/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-da622f2e61ae4d35840b8e22c5b3ebd9-srv
+                port:
+                  number: 80
+          - path: /amazing-bhabha-54c2ee1c7e8111f092651e4ba7c44fda45/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f24cfa99c90942e7a4ab6e06a4a37f28-srv
+                port:
+                  number: 80
+          - path: /pedantic-mahavira-7ef89bba7d8611f0a0a6bea2f7a2490650/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-9ed41e4cb46247e19e8aeeb4393f6de5-srv
+                port:
+                  number: 80
+          - path: /hardcore-aditi-853430767dc611f0ac89bea2f7a2490618/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-81988487f81a42a1b34254538a421e4e-srv
+                port:
+                  number: 80
+          - path: /nice-bose-34472b2c828611f096c6b6ca8f12609c51/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-acb60eca939446ee94565b4cff6ebb60-srv
+                port:
+                  number: 80
+          - path: /trusting-snyder-97949c4e87e711f08103a2fd9305404487/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-c6487cf4682c4e9cb4b4172372c4ee63-srv
+                port:
+                  number: 80
+          - path: /condescending-matsumoto-9e099e10873f11f0818bae665990916218/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-de97bb68c28b4d18ab8614833f7f5200-srv
+                port:
+                  number: 80
+          - path: /jovial-mestorf-5587ff88873f11f099fbae665990916289/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-fa92c9c09249472697b83af9822749f5-srv
+                port:
+                  number: 80
+          - path: /compassionate-dubinsky-d34bdeba8bba11f0a4da72239129fe5c20/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-9fbb4d25060d44f1a05b79dbcbd7c9d8-srv
+                port:
+                  number: 80
+          - path: /suspicious-dev-be36b12a8df511f0ab5672239129fe5c8/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-4bcabd9988a0457b8dc1810f59acf3fa-srv
+                port:
+                  number: 80
+          - path: /angry-liskov-14de7e828f1c11f08c9c1a38aaf6f03747/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-51686f7c1dcb4e83a8073e1019456e49-srv
+                port:
+                  number: 80
+          - path: /adoring-amit-6bbc257e8fd011f083cc1a38aaf6f03760/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-3efde4a0d902433dabb44aab7be3bb3c-srv
+                port:
+                  number: 80
+          - path: /exciting-jepsen-36c9ad148e3b11f0968f72239129fe5c74/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-9363319d063c45189347e07fa2d32b5a-srv
+                port:
+                  number: 80
+          - path: /hardcore-booth-5681493a8e2e11f0a42c72239129fe5c39/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-2e07f464f9c1408bbe8694e3cdc9b734-srv
+                port:
+                  number: 80
+          - path: /exciting-edison-b7a9b8668f1c11f0851b1a38aaf6f03744/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a62b44b3efc347d0843fe26cd2380122-srv
+                port:
+                  number: 80
+          - path: /stupefied-visvesvaraya-a11adf36916e11f0868eee35c4259b1233/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-e2701a06bbf340058b40c85200b7011a-srv
+                port:
+                  number: 80
+          - path: /trusting-sammet-23d760d88fea11f0ba6a1a38aaf6f03728/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a55a9d23607042998d603a1a724ecc31-srv
+                port:
+                  number: 80
+          - path: /agitated-cannon-49adec0c8fe811f09ab31a38aaf6f03781/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-3622d22e4e0642fb886f386c2c63d9be-srv
+                port:
+                  number: 80
+          - path: /frosty-karthik-2ed17dd0917411f0b659ee35c4259b1240/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-7a4a0f5c1f224742997c0eafc6afb4f5-srv
+                port:
+                  number: 80
+          - path: /hardcore-pike-9cf1304690af11f09d6dee35c4259b1267/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-bd9702811a0c4e2c96f57c0a26c4c3cf-srv
+                port:
+                  number: 80
+          - path: /charming-veena-d044c89a918111f0a1da5e84fd8998d658/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-cb70ea189f52430894527ed222c44b5d-srv
+                port:
+                  number: 80
+          - path: /pedantic-raj-02646a1c90ae11f09701ee35c4259b1218/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-04ff8b719290439bb07ef1873824ca30-srv
+                port:
+                  number: 80
+          - path: /affectionate-pare-8ab531f292b211f0b50f8296b87aed1838/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-85859b25da5543498b58ab18080056b9-srv
+                port:
+                  number: 80
+          - path: /focused-rahul-5e7ce5b491f211f098a05e84fd8998d678/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f5fc23df396844e1a52337c6234631e7-srv
+                port:
+                  number: 80
+          - path: /magical-aryan-5f206ea691ab11f09e305e84fd8998d681/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-bb4fd7aacd1947b491dd97843ecc7972-srv
+                port:
+                  number: 80
+          - path: /serene-mcclintock-627eb24e91e511f0902e5e84fd8998d619/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-ba9b2a3e6683437c94a8edbf134b8680-srv
+                port:
+                  number: 80
+          - path: /wizardly-payne-7ecc0372938711f0a8288296b87aed1895/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-e33fc93ea7f44f148e4bf142d236caff-srv
+                port:
+                  number: 80
+          - path: /goofy-hopper-92afc5be922811f08f588296b87aed1878/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-465165b8e6b44516a2bca966fe4cc5b6-srv
+                port:
+                  number: 80
+          - path: /distracted-wright-48fe28e8934511f09e718296b87aed1875/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-c00fcaf3ba47441bb1b250f8b0bf8dd4-srv
+                port:
+                  number: 80
+          - path: /intelligent-wozniak-f9fd6c5291e311f0b9185e84fd8998d684/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a3f71287d49b4eb9bed407d0ca60da21-srv
+                port:
+                  number: 80
+          - path: /recursing-almeida-173fa68c922e11f0a63a8296b87aed1861/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-3c9e863c795e41f28543c91cbf465cfd-srv
+                port:
+                  number: 80
+          - path: /peaceful-kirch-f9e5438693ad11f0aee08296b87aed1874/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-aa5a6b14df8640e68c5032068dccb614-srv
+                port:
+                  number: 80
+          - path: /exciting-gayatri-1f111a7c93c711f0b6608296b87aed1860/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-b9a2024a8f074fc2bb9a6a8d9d9dc224-srv
+                port:
+                  number: 80
+          - path: /magical-anil-ceb2b296938c11f0b2078296b87aed1897/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-2ebfc532c4c04ddeb3a45a1765f78bdc-srv
+                port:
+                  number: 80
+          - path: /fervent-lederberg-49950ada939311f087b28296b87aed1820/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-7b8dcd60eeaa4a1bb526b9c8f10a4415-srv
+                port:
+                  number: 80
+          - path: /reverent-shockley-be79fe52939b11f097a48296b87aed1869/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-5638034fe9c6402d91d7fd24bd835468-srv
+                port:
+                  number: 80
+          - path: /distracted-isha-e1528286945511f0af24b2a60573ee5a74/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a705b0f8c847408ca25fa2ebd9457285-srv
+                port:
+                  number: 80
+          - path: /charming-ride-2e0b321a954d11f0a9b6f2aaa3aafa4371/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-01b17071b5b243c198053d07c6cf170f-srv
+                port:
+                  number: 80
+          - path: /pedantic-naveen-12b85b74955111f08f3af2aaa3aafa4347/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-055a03b552cf457fa667826d8b067607-srv
+                port:
+                  number: 80
+          - path: /stoic-mestorf-47cd949296b311f08ada2670783b77d595/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-a6d702da453f42d083cce04e68aa2e81-srv
+                port:
+                  number: 80
+          - path: /cranky-pooja-2efdd6649b1f11f0962776f5372652f770/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-61390bc28f3146a68964507f7512f845-srv
+                port:
+                  number: 80
+          - path: /dazzling-suman-7f77bce09e2111f0ba4c76f5372652f717/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-2adf5548701949ae9d38916c23d41bef-srv
+                port:
+                  number: 80
+          - path: /pensive-anika-130b705ea41d11f0829c52ce24d58df123/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-0ac336328d754289b8398ac9e1a57879-srv
+                port:
+                  number: 80
+          - path: /us-east-1-backstractelb-926dba-coll-05c4b00f17fd47fc8c341601fbfae033/
+            pathType: Prefix
+            backend:
+              service:
+                name: romantic-aarav-44ba578979-srv
+                port:
+                  number: 80
+          - path: /us-east-1-backstractelb-926dba-coll-05c4b00f17fd47fc8c341601fbfae033/
+            pathType: Prefix
+            backend:
+              service:
+                name: romantic-aarav-44ba578979-srv
+                port:
+                  number: 80
+          - path: /ap-northeast-2-backstractelb-1023d2-coll-f30bb6227f7742a28a587d420ca903a5/
+            pathType: Prefix
+            backend:
+              service:
+                name: stoic-aarav-2a4c19525a-srv
+                port:
+                  number: 80
+          - path: /romantic-wing-0d17b1fca4ff11f0aaff02bf8760b02191/
+            pathType: Prefix
+            backend:
+              service:
+                name: coll-f30bb6227f7742a28a587d420ca903a5-srv
+                port:
+                  number: 80
+          - path: /ap-northeast-2-backstractelb-1023d2-coll-f30bb6227f7742a28a587d420ca903a5/
+            pathType: Prefix
+            backend:
+              service:
+                name: stoic-aarav-2a4c19525a-srv
+                port:
+                  number: 80
+          - path: /ap-northeast-2-backstractelb-1023d2-coll-f30bb6227f7742a28a587d420ca903a5/
+            pathType: Prefix
+            backend:
+              service:
+                name: stoic-aarav-2a4c19525a-srv
+                port:
+                  number: 80
+          - path: /ap-southeast-2-backstractelb-3e3018-coll-473b0c99ca9846dcb94fb3503624cfa7/
+            pathType: Prefix
+            backend:
+              service:
+                name: harmonious-aarohi-341aaead32-srv
+                port:
+                  number: 80
+          
+
